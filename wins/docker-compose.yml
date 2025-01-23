@@ -1,0 +1,11 @@
+services:
+  server:
+    image: p2
+    ports:
+      - "127.0.0.1:5000-5001:5440"
+    deploy:
+      replicas: 2
+
+networks:
+  grpc_net:
+    driver: bridge
